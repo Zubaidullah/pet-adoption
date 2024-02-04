@@ -1,0 +1,279 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    
+}
+
+.top-section-wrapper{
+    background-color: #df446b;
+    padding: 0 16px;
+
+}
+
+.top-section{
+    color: #e5e5da;
+    padding-top: 139px;
+    padding-bottom: 139px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.top-section h1{
+    font-size: 6.25rem;
+    line-height: 97.3%;
+    margin: 0;
+    max-width: 600px;
+}
+
+.intro-text{
+    font-size: 1.25rem;
+    line-height: 169.3%;
+    margin: 1rem 0;
+    max-width: 400px;
+}
+
+.hero-btns-wrapper{
+    margin-bottom: 129px;
+}
+
+.hero-btns {
+    background-color: blueviolet;
+    color: #e5e5da;
+    padding: 12.5px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: solid 1px blueviolet;
+    font-weight: 600;
+    font-size: 1.125rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.hero-btns:hover {
+    background-color: #e5e5da;
+    color: blueviolet;
+    border: solid 1px #e5e5da;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #e5e5da;
+    margin-left: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: #e5e5da;
+    color: #df446b;
+}
+
+.intro-feature-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+}
+.intro-feature {
+    border: solid 1px #e5e5da;
+    padding: 33px 25px;
+    border-radius: 5px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.intro-feature p {
+    margin: 0;
+    font-size: 1.0625rem;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+}
+
+.intro-feature h2 {
+    font-size: 1.5rem;
+    margin: 20px 0 5px 0;
+}
+
+.intro-feature i {
+    font-size: 2.5rem;
+}
+
+
+.page-section {
+    background-color: #e5e5da;
+    padding: 100px 16px;
+}
+
+.page-section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.page-section-title {
+    font-size: 5.31rem;
+    margin: 0;
+}
+
+.pet-filter {
+    color: #df446b;
+    font-size: 1.375rem;
+}
+
+.pet-filter button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Source sans 3', sans-serif;
+    font-size: 1.375rem;
+    color: #df446b;
+}
+
+footer p {
+    color: #df446b;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0 0 65px 0;
+    margin: 20px 0 0 0;
+    display: block;
+
+}
+
+.pet-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 34px;
+    margin-bottom: 100px;
+}
+
+.pet-card {
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.pet-card-photo {
+    order: 1;
+    grid-row: 1;
+}
+.pet-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.pet-card-text {
+    order: 2;
+    grid-row: 1;
+    padding: 20px;
+    margin: 0;
+}
+
+.pet-age {
+    font-size: 0.85rem;
+    color: #646463;
+}
+
+.pet-description {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.pet-card-text h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+/* responsive */
+/* CSS for responsiveness */
+
+/* Add a media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+
+    .top-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+
+    .top-section h1 {
+        font-size: 3.5rem;
+        max-width: 100%;
+    }
+
+    .intro-text {
+        max-width: 100%;
+    }
+
+    .intro-feature-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .intro-feature p {
+        font-size: 1.5rem;
+        font-weight: thinner;
+        line-height: 1;
+        letter-spacing: normal;
+    }
+
+    .page-section-title {
+        font-size: 3.5rem;
+    }
+
+    .pet-list {
+        grid-template-columns: 1fr;
+    }
+
+    .pet-card {
+        grid-template-columns: 1fr;
+        margin-right: 0;
+    }
+
+    .pet-card-photo,
+    .pet-card-text {
+        order: initial;
+        grid-row: initial;
+    }
+
+    .pet-card img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto; 
+    }
+
+    .pet-card-text {
+        padding: 20px;
+        margin: 0;
+    }
+}
+
+/* Add another media query for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .top-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .intro-feature-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .pet-card {
+        display: block;
+    }
+
+    .pet-card img {
+        border-radius: 10px;
+    }
+}
